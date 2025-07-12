@@ -1,2 +1,1 @@
-# pyquet
-mzml to parquet converter using OpenMS' Python libraries. 
+I can see this becoming a standalone github project too, but its original intention was for GSoC 25' with OpenMS. At the end, the goal is to have a simple CLI for converting .mzML to .parquet files, which is especially important in big data projects (eg. machine learning)
