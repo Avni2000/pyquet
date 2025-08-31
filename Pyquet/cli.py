@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-CLI for Pyquet - mzML to Parquet converter.
+CLI for pyquetms - mzML to Parquet converter.
 """
 
 import argparse
@@ -18,11 +18,11 @@ def main():
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
-  pyquet input.mzML                           # Convert to input_converted.parquet
-  pyquet input.mzML -o output.parquet         # Convert to specific output file
-  pyquet input.mzML --batch-size 5000         # Use smaller batch size
-  pyquet input.mzML --compression gzip        # Use gzip compression
-  pyquet input.mzML --info                    # Show file info without converting
+  pyquetms input.mzML                           # Convert to input_converted.parquet
+  pyquetms input.mzML -o output.parquet         # Convert to specific output file
+  pyquetms input.mzML --batch-size 5000         # Use smaller batch size
+  pyquetms input.mzML --compression gzip        # Use gzip compression
+  pyquetms input.mzML --info                    # Show file info without converting
         """
     )
     

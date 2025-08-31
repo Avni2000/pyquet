@@ -1,32 +1,32 @@
-# Pyquet
+# pyquetms
 
 Memory-efficient mzML to Parquet converter for mass spectrometry files.
 
 ## Overview
 
-Pyquet provides streaming conversion of mzML files to Parquet format with minimal memory usage, making it suitable for processing large mass spectrometry datasets without running out of memory. This project was originally developed as a side project inspired by GSoC 25' with OpenMS, with the goal of providing a simple CLI for converting .mzML to .parquet files, which is especially important in big data projects (e.g., machine learning).
+pyquetms provides streaming conversion of mzML files to Parquet format with minimal memory usage, making it suitable for processing large mass spectrometry datasets without running out of memory. This project was originally developed as a side project inspired by GSoC 25' with OpenMS, with the goal of providing a simple CLI for converting .mzML to .parquet files, which is especially important in big data projects (e.g., machine learning).
 
 ## Installation
 
 ### From PyPI
 
 ```bash
-pip install pyquet
+pip install pyquetms
 ```
 
 ### From source
 
 ```bash
-git clone https://github.com/Avni2000/pyquet.git
-cd pyquet
+git clone https://github.com/Avni2000/pyquetms.git
+cd pyquetms
 pip install .
 ```
 
 ### Development installation
 
 ```bash
-git clone https://github.com/Avni2000/pyquet.git
-cd pyquet
+git clone https://github.com/Avni2000/pyquetms.git
+cd pyquetms
 pip install -e ".[dev]"
 ```
 
@@ -36,26 +36,26 @@ pip install -e ".[dev]"
 
 Basic conversion:
 ```bash
-pyquet input.mzML
+pyquetms input.mzML
 ```
 or
 ```bash
-pyquet ~/Downloads/input.mzML
+pyquetms ~/Downloads/input.mzML
 ```
 
 Specify output file (defaults to working directory):
 ```bash
-pyquet input.mzML -o output.parquet
+pyquetms input.mzML -o output.parquet
 ```
 
 Customize batch size and compression. I recommend :
 ```bash
-pyquet input.mzML --batch-size 5000 --compression gzip
+pyquetms input.mzML --batch-size 5000 --compression gzip
 ```
 
 Get file information without converting:
 ```bash
-pyquet input.mzML --info
+pyquetms input.mzML --info
 ```
 
 ## Output Format

@@ -1,5 +1,5 @@
 """
-Pyquet - Memory-efficient mzML to Parquet converter for mass spectrometry files.
+pyquetms - Memory-efficient mzML to Parquet converter for mass spectrometry files.
 
 This package provides streaming conversion of mzML files to Parquet format
 with minimal memory usage, suitable for processing large datasets.

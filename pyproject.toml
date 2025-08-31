@@ -3,8 +3,8 @@ requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "pyquet"
-version = "0.1.0"
+name = "pyquetmsMS"
+version = "0.1.1"
 description = "Memory-efficient mzML to Parquet converter for mass spectrometry files"
 readme = "README.md"
 license = {text = "MIT"}
@@ -41,14 +41,14 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/Avni2000/pyquet"
+Homepage = "https://github.com/Avni2000/pyquetms"
 
 [project.scripts]
-pyquet = "Pyquet.cli:main"
+pyquetms = "pyquetms.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["."]
-include = ["Pyquet*"]
+include = ["pyquetms*"]
 
 [tool.black]
 line-length = 100

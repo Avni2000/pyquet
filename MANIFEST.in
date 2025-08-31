@@ -1,6 +1,6 @@
 include README.md
 include pyproject.toml
-recursive-include Pyquet *.py
+recursive-include pyquetms *.py
 exclude *.mzML
 exclude *.parquet
 exclude *.csv
